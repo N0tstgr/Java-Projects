@@ -6,6 +6,7 @@ import java.awt.event.*;
 
 
 public class Login extends JFrame  implements ActionListener{
+    JButton login, signup, clear;
     Login(){
         setTitle("AUTOMATED TELLER MACHINE(ATM)");
         setLayout(null);
@@ -43,21 +44,21 @@ public class Login extends JFrame  implements ActionListener{
         pinTextField.setBounds(300, 228, 250, 30);
         add(pinTextField);
 
-        JButton login = new JButton("Sign IN");
+       login = new JButton("Sign IN");
         login.setBounds(300, 300, 100, 30);
         login.setBackground(Color.black);
         login.setForeground(Color.white);
         login.addActionListener(this);
         add(login);
 
-        JButton clear = new JButton("Clear");
+        clear = new JButton("Clear");
         clear.setBounds(450, 300, 100, 30);
         clear.setBackground(Color.black);
         clear.setForeground(Color.white);
         clear.addActionListener(this);
         add(clear);
 
-        JButton signup = new JButton("Sign up");
+        signup = new JButton("Sign up");
         signup.setBounds(300, 350, 250, 30);
         signup.setBackground(Color.black);
         signup.setForeground(Color.white);
@@ -70,7 +71,11 @@ public class Login extends JFrame  implements ActionListener{
         setLocation(400, 150);
     }
 public void actionPerformed(ActionEvent ae){
+if (ae.getSource()==clear){
 
+}else if (ae.getSource()==signup){
+
+}else if (ae.getSource()==login);
 }
 
 
