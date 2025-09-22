@@ -54,7 +54,7 @@ public class Login extends JFrame {
         add(clear);
 
         JButton signup = new JButton("Sign up");
-        signup.setBounds(375, 350, 100, 30);
+        signup.setBounds(300, 350, 250, 30);
         signup.setBackground(Color.black);
         signup.setForeground(Color.white);
         add(signup);
