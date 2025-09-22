@@ -7,6 +7,8 @@ import java.awt.event.*;
 
 public class Login extends JFrame  implements ActionListener{
     JButton login, signup, clear;
+    JTextField cardTextField;
+    JPasswordField pinTextField;
     Login(){
         setTitle("AUTOMATED TELLER MACHINE(ATM)");
         setLayout(null);
@@ -29,7 +31,7 @@ public class Login extends JFrame  implements ActionListener{
         cardno.setBounds(100, 160, 180, 40);
         add(cardno);
 
-        JTextField cardTextField = new JTextField();
+         cardTextField = new JTextField();
         cardTextField.setBounds(300, 168, 250, 30);
         add(cardTextField);
 
@@ -40,7 +42,7 @@ public class Login extends JFrame  implements ActionListener{
         pin.setBounds(100, 220, 250, 40);
         add(pin);
 
-        JTextField pinTextField = new JTextField();
+         pinTextField = new JPasswordField();
         pinTextField.setBounds(300, 228, 250, 30);
         add(pinTextField);
 
@@ -72,7 +74,8 @@ public class Login extends JFrame  implements ActionListener{
     }
 public void actionPerformed(ActionEvent ae){
 if (ae.getSource()==clear){
-
+cardTextField.setText("");
+    pinTextField.setText("");
 }else if (ae.getSource()==signup){
 
 }else if (ae.getSource()==login);
