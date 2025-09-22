@@ -15,6 +15,10 @@ public class Login extends JFrame {
         JLabel label = new JLabel(i3);
         label.setBounds(70,10,100,100);
         add(label);
+        JLabel text = new JLabel("Welcome to ATM");
+        text.setFont(new Font("Osward", Font.BOLD, 38));
+        text.setBounds(200, 40, 400, 40);
+        add(text);
         getContentPane().setBackground(Color.orange);
         setSize(810, 490);
         setVisible(true);
