@@ -53,6 +53,12 @@ public class Login extends JFrame {
         clear.setForeground(Color.white);
         add(clear);
 
+        JButton signup = new JButton("Sign up");
+        signup.setBounds(375, 350, 100, 30);
+        signup.setBackground(Color.black);
+        signup.setForeground(Color.white);
+        add(signup);
+
         getContentPane().setBackground(Color.lightGray);
         setSize(810, 490);
         setVisible(true);
