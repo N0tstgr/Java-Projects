@@ -34,10 +34,14 @@ public class Login extends JFrame {
 
         JLabel pin = new JLabel("Pin:");
         pin.setFont(new Font("Raleway", Font.BOLD, 38));
-        pin.setBounds(100, 220, 400, 40);
+        pin.setBounds(100, 220, 250, 40);
         add(pin);
 
-        getContentPane().setBackground(Color.orange);
+        JTextField pinTextField = new JTextField();
+        pinTextField.setBounds(300, 220, 250, 30);
+        add(pinTextField);
+
+        getContentPane().setBackground(Color.lightGray);
         setSize(810, 490);
         setVisible(true);
         setLocation(400, 150);
