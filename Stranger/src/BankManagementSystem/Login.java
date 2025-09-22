@@ -15,10 +15,22 @@ public class Login extends JFrame {
         JLabel label = new JLabel(i3);
         label.setBounds(70,10,100,100);
         add(label);
+
         JLabel text = new JLabel("Welcome to ATM");
         text.setFont(new Font("Osward", Font.BOLD, 38));
         text.setBounds(200, 40, 400, 40);
         add(text);
+
+        JLabel cardno = new JLabel("Card No:");
+        cardno.setFont(new Font("Osward", Font.BOLD, 38));
+        cardno.setBounds(200, 40, 400, 40);
+        add(cardno);
+
+        JLabel pin = new JLabel("Pin:");
+        pin.setFont(new Font("Osward", Font.BOLD, 38));
+        pin.setBounds(200, 40, 400, 40);
+        add(pin);
+
         getContentPane().setBackground(Color.orange);
         setSize(810, 490);
         setVisible(true);
