@@ -1,9 +1,11 @@
 package BankManagementSystem;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 
-public class Login extends JFrame {
+
+public class Login extends JFrame  implements ActionListener{
     Login(){
         setTitle("AUTOMATED TELLER MACHINE(ATM)");
         setLayout(null);
@@ -45,18 +47,21 @@ public class Login extends JFrame {
         login.setBounds(300, 300, 100, 30);
         login.setBackground(Color.black);
         login.setForeground(Color.white);
+        login.addActionListener(this);
         add(login);
 
         JButton clear = new JButton("Clear");
         clear.setBounds(450, 300, 100, 30);
         clear.setBackground(Color.black);
         clear.setForeground(Color.white);
+        clear.addActionListener(this);
         add(clear);
 
         JButton signup = new JButton("Sign up");
         signup.setBounds(300, 350, 250, 30);
         signup.setBackground(Color.black);
         signup.setForeground(Color.white);
+        signup.addActionListener(this);
         add(signup);
 
         getContentPane().setBackground(Color.lightGray);
@@ -64,6 +69,10 @@ public class Login extends JFrame {
         setVisible(true);
         setLocation(400, 150);
     }
+public void actionPerformed(ActionEvent ae){
+
+}
+
 
     public static void main(String[] args) {
         new Login();
