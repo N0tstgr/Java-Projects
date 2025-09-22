@@ -22,13 +22,13 @@ public class Login extends JFrame {
         add(text);
 
         JLabel cardno = new JLabel("Card No:");
-        cardno.setFont(new Font("Osward", Font.BOLD, 38));
-        cardno.setBounds(200, 40, 400, 40);
+        cardno.setFont(new Font("Raleway", Font.BOLD, 38));
+        cardno.setBounds(100, 160, 400, 40);
         add(cardno);
 
         JLabel pin = new JLabel("Pin:");
-        pin.setFont(new Font("Osward", Font.BOLD, 38));
-        pin.setBounds(200, 40, 400, 40);
+        pin.setFont(new Font("Raleway", Font.BOLD, 38));
+        pin.setBounds(100, 220, 400, 40);
         add(pin);
 
         getContentPane().setBackground(Color.orange);
