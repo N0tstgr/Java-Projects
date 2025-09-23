@@ -1,10 +1,21 @@
 package BankManagementSystem;
+
+
 import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+
 
 public class SignupOne  extends JFrame{
 
 
+
+
     SignupOne(){
+        Random ran = new Random();
+        System.out.println(ran);
+        JLabel formno = new JLabel("Application FORM NO");
+        getContentPane().setBackground(Color.gray);
              setSize(850, 800);
              setLocation(350,10);
              setVisible(true);
