@@ -4,14 +4,14 @@ import java.awt.*;
 import java.util.*;
 public class SignupOne  extends JFrame{
     SignupOne(){
+        setLayout(null);
+
         Random ran = new Random();
         long random = (Math.abs(ran.nextLong() % 9000L) + 1000);
 
-
-
         JLabel formno = new JLabel("APPLICATION FORM NO : " + random);
         formno.setFont(new Font("Raleway", Font.BOLD, 38));
-        formno.setFont(new Font("Raleway", Font.BOLD, 30));
+//        formno.setFont(new Font("Raleway", Font.BOLD, 30));
         add(formno);
 
         getContentPane().setBackground(Color.gray);
