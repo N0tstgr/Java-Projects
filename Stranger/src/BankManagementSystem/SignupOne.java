@@ -11,7 +11,7 @@ public class SignupOne  extends JFrame{
 
         JLabel formno = new JLabel("APPLICATION FORM NO : " + random);
         formno.setFont(new Font("Raleway", Font.BOLD, 35));
-        formno.setBounds(140, 80 ,600, 40);
+        formno.setBounds(147, 80 ,600, 40);
         add(formno);
 
         JLabel personalDetails = new JLabel("Enter your Person details");
