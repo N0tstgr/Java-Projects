@@ -16,7 +16,7 @@ public class SignupOne  extends JFrame{
 
         JLabel personalDetails = new JLabel("Enter your Person details");
         personalDetails.setFont(new Font("Raleway" , Font.BOLD, 30));
-        personalDetails.setBounds(250 ,20, 6000, 40);
+        personalDetails.setBounds(250 ,20, 7000, 40);
         add(personalDetails);
 
 
