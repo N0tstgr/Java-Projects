@@ -22,7 +22,7 @@ public class SignupOne  extends JFrame{
 
         getContentPane().setBackground(Color.gray);
              setSize(850, 800);
-             setLocation(350,10);
+             setLocation(351,10);
              setVisible(true);
     }
     public static void main(String[] args) {
