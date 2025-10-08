@@ -9,7 +9,7 @@ public class SignupOne  extends JFrame{
         Random ran = new Random();
         long random = (Math.abs(ran.nextLong() % 9000L) + 1000);
 
-        JLabel formno = new JLabel("APPLICATION FORM NO : " + random);
+        JLabel formno = new JLabel("APPLICATION FORM NO 1 : " + random);
         formno.setFont(new Font("Raleway", Font.BOLD, 35));
         formno.setBounds(147, 80 ,600, 40);
         add(formno);
